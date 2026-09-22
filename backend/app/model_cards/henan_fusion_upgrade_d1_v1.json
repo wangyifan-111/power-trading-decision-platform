@@ -1,0 +1,79 @@
+{
+  "protocol": {
+    "pre_rt_label_cutoff": "D-1",
+    "day_ahead_anchor_label_cutoff": "D-2",
+    "post_rt_label_cutoff": "D-1",
+    "selection": [
+      "2026-06-01",
+      "2026-08-07"
+    ],
+    "test": [
+      "2026-08-08",
+      "2026-09-06"
+    ],
+    "weather_and_power_issue_time_available": false
+  },
+  "pre_rt": {
+    "upgraded": {
+      "mae": 52.6632008490281,
+      "rmse": 74.11119668174514,
+      "bias": -17.133515523426315,
+      "n": 720
+    },
+    "direct_d1_base": {
+      "mae": 53.26669440675031,
+      "rmse": 74.48975581394376,
+      "bias": -19.427920157250615,
+      "n": 720
+    },
+    "anchor_weights": {
+      "night": 0.3,
+      "morning": 0.2,
+      "solar_core": 0.0,
+      "evening": 0.1
+    }
+  },
+  "post_rt": {
+    "upgraded": {
+      "mae": 37.873035152442135,
+      "rmse": 60.55762070892288,
+      "bias": 7.563182571461425,
+      "n": 720
+    },
+    "published_day_ahead": {
+      "mae": 41.268166666666666,
+      "rmse": 66.0023376753514,
+      "bias": 11.819833333333333,
+      "n": 720
+    },
+    "strategy": {
+      "spread_weight": 0.5,
+      "period_rules": {
+        "1": "global",
+        "2": "global",
+        "3": "global",
+        "4": "global",
+        "5": "global",
+        "6": "global",
+        "7": "global",
+        "8": "global",
+        "9": "global",
+        "10": "global",
+        "11": "global",
+        "12": "global",
+        "13": "global",
+        "14": "global",
+        "15": "global",
+        "16": "global",
+        "17": "global",
+        "18": "da",
+        "19": "global",
+        "20": "global",
+        "21": "global",
+        "22": "global",
+        "23": "global",
+        "24": "da"
+      }
+    }
+  }
+}
